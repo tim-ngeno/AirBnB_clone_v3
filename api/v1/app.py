@@ -1,4 +1,4 @@
-#!flask/bin/python3
+#!/usr/bin/python3
 """Flask app module"""
 
 from flask import Flask, make_response, jsonify
