@@ -11,7 +11,7 @@ from flask import make_response
 
 @app_views.route('/states', methods=['GET'], strict_slashes=False)
 def all_states():
-     """Returns all states"""
+    """Returns all states"""
     dic_states = storage.all(State)
     states = []
     for state in dic_states.values():
