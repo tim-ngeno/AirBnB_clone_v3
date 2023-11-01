@@ -64,7 +64,7 @@ def update_user(user_id):
     if user_id:
         user = storage.get(User, user_id)
         if user is None:
-            aobrt(404)
+            abort(404)
         if not request.get_json():
             return make_response(jsonify({"error": "Not a JSON"}),
                                  400)
